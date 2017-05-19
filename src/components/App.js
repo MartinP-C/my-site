@@ -8,6 +8,7 @@ import s from '../assets/sass/core.scss';
 import Header from './Header';
 import Footer from './Footer';
 import homePage from '../pages/homePage';
+import skillsPage from '../pages/skillsPage';
 
 export default function App() {
     return (
@@ -24,7 +25,7 @@ export default function App() {
 
         <Switch>
           <Route exact path="/" component={homePage} />
-          <Route path="/example" component={ExampleComponent} />
+          <Route path="/skills" component={skillsPage} />
           <Route component={PageNotFound} />
         </Switch>
 

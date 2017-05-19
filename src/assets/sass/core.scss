@@ -1,4 +1,7 @@
-//test
+/*test*/
+h1 {
+    color:blue !important; //test
+}
 @import 'partials/vars';
 @import 'partials/typography';
 @import 'partials/footer.scss';
@@ -12,9 +15,6 @@
 
 * {
     box-sizing: border-box;
-}
-h2 {
-    color:blue; //test
 }
 
 /*these must be deduped and merged to sass. had to update css directly when grunt would not work*/

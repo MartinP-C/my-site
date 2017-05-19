@@ -1,7 +1,6 @@
 import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
-import s from '../styles/exampleComponent.style';
 
 
 const Header = () => (
@@ -22,21 +21,16 @@ const Header = () => (
     <div className="collapse navbar-collapse" id="navbar-menu">
       <ul className="nav navbar-nav">
         <li className="nav-item">
-          <Route
-            exact path="/"
-            render={() => (
-                <Interactive
-                  as={Link}
-                  {...s.link}
-                  to="/"
-                >Home</Interactive>
-            )}
-          />
+            <Interactive
+              as={Link}
+              to="/"
+            >Home</Interactive>
         </li>
         <li className="nav-item">
-          <Link to="skills" className="nav-link">
-            Skills
-          </Link>
+            <Interactive
+              as={Link}
+              to="/skills"
+            >Skills</Interactive>
         </li>
         <li className="nav-item">
           <Link to="demos" className="nav-link">
