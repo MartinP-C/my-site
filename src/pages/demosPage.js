@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import Interactive from 'react-interactive';
+import { Switch, Route, Link } from 'react-router-dom';
+import PageNotFound from '../components/PageNotFound';
+
+import gasketPage from './gasketPage';
 
 import Demo from '../components/Demo';
 import { demos } from '../cms/content.json';
@@ -20,12 +25,26 @@ for (demo of demos) {
 }
 
 const demosPage = () => (
-    <main className="demos">
-        <h1>Demos</h1>
-        <section className="row">
-                {demosBuilt}
-        </section>
-    </main>
+        <Switch>
+            <Route
+                exact path="/demos/gasket"
+                render={({location}) => (
+                    <gasketPage location={location} />
+                )}
+            />
+            <Route
+            exact path="/demos"
+            render={() => (
+                <main className="demos">
+                    <h1>Demos</h1>
+                    <section className="row">
+                            {demosBuilt}
+                    </section>
+                </main>
+            )}
+            />
+      <Route component={PageNotFound} />
+      </Switch>
 );
 
 export default demosPage;

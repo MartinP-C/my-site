@@ -24,7 +24,6 @@ export default function App() {
           <Route path="/testofSPA/skills" component={skillsPage} />
           <Route path="/testofSPA/demos" component={demosPage} />
           <Route path="/testofSPA/articles" component={articlesPage} />
-          <Route path="/testofSPA/demos/gasket" component={gasketPage} />
           <Route component={PageNotFound} />
         </Switch>
 
