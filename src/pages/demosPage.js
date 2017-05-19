@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import Demo from './Demo';
-import {demos} from '../cms/content.json';
+import Demo from '../components/Demo';
+import { demos } from '../cms/content.json';
 
 let demo;
 const demosBuilt = [];

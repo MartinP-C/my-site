@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import Article from './Article.js';
+import Article from '../components/Article';
 import {articles} from '../cms/content.json';
 
 let article;

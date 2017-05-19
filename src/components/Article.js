@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import Interactive from 'react-interactive';
+import { Switch, Route, Link } from 'react-router-dom';
 
 const Article = (props) => (
     <div className="col-md-12">

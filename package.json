@@ -38,6 +38,8 @@
     "webpack-dev-server": "^2.4.5",
     "extract-text-webpack-plugin": "^v2.0.0-rc.1",
     "style-loader": "0.13.1",
-    "css-loader": "0.26.1"
+    "css-loader": "0.26.1",
+    "url-loader": "0.5.7",
+    "file-loader": "^0.10.0"
   }
 }

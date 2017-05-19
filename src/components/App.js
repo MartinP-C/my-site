@@ -9,24 +9,22 @@ import Header from './Header';
 import Footer from './Footer';
 import homePage from '../pages/homePage';
 import skillsPage from '../pages/skillsPage';
+import demosPage from '../pages/demosPage';
+import articlesPage from '../pages/articlesPage';
+import gasketPage from '../pages/gasketPage';
 
 export default function App() {
     return (
       <div style={s.root}>
-        <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
-        <Interactive
-          as="a"
-          href="https://github.com/rafrex/spa-github-pages"
-          style={s.repoLink}
-          {...s.link}
-        >https://github.com/rafrex/spa-github-pages</Interactive>
-
         <Header />
 
-        <Switch>
+        <Switch className="switch">
           <Route exact path="/" component={homePage} />
           <Route exact path="/testofSPA/" component={homePage} />
           <Route path="/testofSPA/skills" component={skillsPage} />
+          <Route path="/testofSPA/demos" component={demosPage} />
+          <Route path="/testofSPA/articles" component={articlesPage} />
+          <Route path="/testofSPA/demos/gasket" component={gasketPage} />
           <Route component={PageNotFound} />
         </Switch>
 

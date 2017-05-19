@@ -1,0 +1,47 @@
+{
+    "demos":
+    [{
+        "name": "gaskets",
+        "image": "test.png",
+        "descriptionHeading": "Gaskets",
+        "description": "Using JavaScript to create a Apollian Gasket",
+        "page": "gasket"
+    },{
+        "name": "another",
+        "image":"test.png",
+        "descriptionHeading":"Another Demo",
+        "description":"<span style=\"text-decoration:line-through;\">To Do: make this a loop over demos</span>",
+        "page":"#"
+    },{   
+        "name":"another2",
+        "image":"test.png",
+        "descriptionHeading":"Another Demo",
+        "description":"<span style=\"text-decoration:line-through;\">To Do: make this use html</span>",
+        "page":"#"
+    },{   
+        "name":"another3",
+        "image":"test.png",
+        "descriptionHeading":"Another Demo",
+        "description":"<span style=\"text-decoration:line-through;\">To Do: make this use html</span>",
+        "page":"#"
+    }],
+
+    "articles":
+    [{
+        "name": "first",
+        "title": "Expandable Preview Article",
+        "subtitle": "The First Article Subtitle",
+        "body": "Each article is built from a React component where the content is supplied via props from a JSON file.<br>The article objects are sorted into date order before being displayed.",
+        "author": "Martin",
+        "date": "2017-05-15",
+        "type": "exandable"
+    },{
+        "name": "second",
+        "title": "The Second Article",
+        "subtitle": "The Second Article Subtitle",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iure facere inventore id porro, nostrum, aut quod architecto tenetur repudiandae nam est, vitae cum quis. Possimus labore, perferendis at ea.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates harum ullam minima? Nesciunt natus inventore, sequi enim facilis. Vero, laborum hic provident. Voluptate quam porro quos libero, veritatis labore voluptatibus.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quasi ea explicabo modi consequuntur qui quos odit eos sunt, voluptatem expedita ad vitae minus eius quod. Quasi praesentium quibusdam harum!",
+        "author": "Martin",
+        "date": "2017-05-12",
+        "type": "clickHereToRead"
+    }]
+}

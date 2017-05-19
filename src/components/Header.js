@@ -33,14 +33,18 @@ const Header = () => (
             >Skills</Interactive>
         </li>
         <li className="nav-item">
-          <Link to="demos" className="nav-link">
-            Demos
-          </Link>
+            <Interactive
+              className="nav-link"
+              as={Link}
+              to="/testofSPA/demos"
+            >Demos</Interactive>
         </li>
         <li className="nav-item">
-          <Link to="articles" className="nav-link">
-            Articles
-          </Link>
+            <Interactive
+              className="nav-link"
+              as={Link}
+              to="/testofSPA/articles"
+            >Articles</Interactive>
         </li>
       </ul>
     </div>
