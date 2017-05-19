@@ -27,13 +27,13 @@ for (demo of demos) {
 const demosPage = () => (
         <Switch>
             <Route
-                exact path="/demos/gasket"
+                exact path="testofSPA/demos/gasket"
                 render={({location}) => (
                     <gasketPage location={location} />
                 )}
             />
             <Route
-            exact path="/demos"
+            exact path="testofSPA/demos"
             render={() => (
                 <main className="demos">
                     <h1>Demos</h1>
