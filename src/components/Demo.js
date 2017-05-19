@@ -7,7 +7,7 @@ import test from '../assets/images/test.png';
 const Demo = (props) => (
     <div className="col-md-4">
     <div className="demo-container">
-        <Interactive as={Link} to={`/testofSPA/demos/${props.demopage}`}>
+        <Interactive as={Link} to={`/testofSPA/demos/${props.demoPage}`}>
             <img src={test} alt=""/>
             <div className="demo-rollover">
                 <h3>{props.demoDescriptionHeading}</h3>
