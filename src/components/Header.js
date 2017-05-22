@@ -21,30 +21,28 @@ const Header = () => (
     <div className="collapse navbar-collapse" id="navbar-menu">
       <ul className="nav navbar-nav">
         <li className="nav-item">
-            <Interactive
-              as={Link}
+            <Link
+              className="nav-link"
               to="/"
-            >Home</Interactive>
+            >Home</Link>
         </li>
         <li className="nav-item">
-            <Interactive
-              as={Link}
+            <Link
+              className="nav-link"
               to="/skills"
-            >Skills</Interactive>
+            >Skills</Link>
         </li>
         <li className="nav-item">
-            <Interactive
+            <Link
               className="nav-link"
-              as={Link}
               to="/demos"
-            >Demos</Interactive>
+            >Demos</Link>
         </li>
         <li className="nav-item">
-            <Interactive
+            <Link
               className="nav-link"
-              as={Link}
               to="/articles"
-            >Articles</Interactive>
+            >Articles</Link>
         </li>
       </ul>
     </div>
