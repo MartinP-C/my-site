@@ -23,27 +23,27 @@ const Header = () => (
         <li className="nav-item">
             <Interactive
               as={Link}
-              to="/testofSPA"
+              to="/"
             >Home</Interactive>
         </li>
         <li className="nav-item">
             <Interactive
               as={Link}
-              to="/testofSPA/skills"
+              to="/skills"
             >Skills</Interactive>
         </li>
         <li className="nav-item">
             <Interactive
               className="nav-link"
               as={Link}
-              to="/testofSPA/demos"
+              to="/demos"
             >Demos</Interactive>
         </li>
         <li className="nav-item">
             <Interactive
               className="nav-link"
               as={Link}
-              to="/testofSPA/articles"
+              to="/articles"
             >Articles</Interactive>
         </li>
       </ul>

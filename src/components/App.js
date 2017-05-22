@@ -20,9 +20,9 @@ export default function App() {
 
         <Switch className="switch">
           <Route exact path="/" component={homePage} />
-          <Route exact path="/testofSPA/" component={homePage} />
-          <Route path="/testofSPA/skills" component={skillsPage} />
-          <Route path="/testofSPA/articles" component={articlesPage} />
+          <Route path="/skills" component={skillsPage} />
+          <Route path="/demos" component={demosPage} />
+          <Route path="/articles" component={articlesPage} />
           <Route component={PageNotFound} />
         </Switch>
 
