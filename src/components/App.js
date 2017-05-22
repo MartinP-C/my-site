@@ -22,7 +22,6 @@ export default function App() {
           <Route exact path="/" component={homePage} />
           <Route exact path="/testofSPA/" component={homePage} />
           <Route path="/testofSPA/skills" component={skillsPage} />
-          <Route path="/testofSPA/demos" component={demosPage} />
           <Route path="/testofSPA/articles" component={articlesPage} />
           <Route component={PageNotFound} />
         </Switch>
