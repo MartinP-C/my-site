@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 
 ReactDOM.render(
-  <BrowserRouter basename="/testofSPA">
+  <BrowserRouter basename="/my-site">
     <App />
   </BrowserRouter>,
   document.getElementById('root'),

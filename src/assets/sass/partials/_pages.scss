@@ -1,5 +1,13 @@
-.skills {
-    [class*="col"] {
-        text-align: center;
+.skills [class*="col"] {
+    text-align: center
+}
+
+.home {
+    section div {
+        background-color: #ffffff;
+        padding: 2em 1em;
+    }
+    img.me {
+        border-radius: 190px;
     }
 }

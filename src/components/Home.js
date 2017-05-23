@@ -8,7 +8,6 @@ export default function Home() {
   const repoReadmeLink = text => (
     <Interactive
       as="a"
-      {...s.link}
       href="https://github.com/rafrex/spa-github-pages#readme"
     >{text}</Interactive>
   );
@@ -30,7 +29,6 @@ export default function Home() {
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
-          {...s.link}
           to="/example"
         >Example page</Interactive>
       </div>

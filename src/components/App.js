@@ -1,7 +1,6 @@
 import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route } from 'react-router-dom';
-import ExampleComponent from './ExampleComponent';
 import PageNotFound from './PageNotFound';
 
 import s from '../assets/sass/core.scss';

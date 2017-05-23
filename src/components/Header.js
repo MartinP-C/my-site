@@ -1,6 +1,7 @@
 import React from 'react';
-import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
+
+import bookImage from '../assets/images/book.svg';
 
 
 const Header = () => (
@@ -14,7 +15,7 @@ const Header = () => (
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <a className="navbar-brand" href="/"><img src="/static/images/book.svg"/></a>
+      <a className="navbar-brand" href="/"><img src={bookImage}/></a>
     </div>
 
     
