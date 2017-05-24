@@ -3,8 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
-    `${__dirname}/src/index.js`,
-    `${__dirname}/src/assets/sass/core.scss`,
+    `${__dirname}/src/index.js`
   ],
   output: {
     path: `${__dirname}/build`,

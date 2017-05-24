@@ -13,6 +13,8 @@ import demosPage from '../pages/demosPage';
 import articlesPage from '../pages/articlesPage';
 import gasketPage from '../pages/gasketPage';
 
+import accordian from '../assets/scripts/accordian';
+
 export default function App() {
     return (
       <div style={s.root}>

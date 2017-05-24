@@ -11,20 +11,14 @@ h1 {
     top: 100px;
     z-index: 1;
 }
-    
-h2.sticky {
-    position: sticky;
-    top: 50px;
-    z-index: 1;
-    background-color: white
-}
 
 h2 {
     &.sticky {
-        position: sticky;
-        top: 50px;
-        z-index: 1;
-        background-color: white;
+        @media screen and (max-width: 992px) {/*find the css framework variable for this size*/
+            position: sticky;
+            top: 50px;
+            z-index: 1;
+        }
     }
 
 }
