@@ -1,8 +1,9 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import NavLink from './NavLink';
 
 import bookImage from '../assets/images/book.svg';
 
+/* TODO: Array of links and loop. Array from cms? */
 
 const Header = () => (
     <nav className="navbar navbar-light fixed-top">
@@ -21,34 +22,15 @@ const Header = () => (
     
     <div className="collapse navbar-collapse" id="navbar-menu">
       <ul className="nav navbar-nav">
-        <li className="nav-item">
-            <Link
-              className="nav-link"
-              to="/"
-            >Home</Link>
-        </li>
-        <li className="nav-item">
-            <Link
-              className="nav-link"
-              to="/skills"
-            >Skills</Link>
-        </li>
-        <li className="nav-item">
-            <Link
-              className="nav-link"
-              to="/demos"
-            >Demos</Link>
-        </li>
-        <li className="nav-item">
-            <Link
-              className="nav-link"
-              to="/articles"
-            >Articles</Link>
-        </li>
+        <NavLink text="Home" to="/" />
+        <NavLink text="Skills" to="/skills" />
+        <NavLink text="Demos" to="/demos" />
+        <NavLink text="Articles" to="/articles" />
+        <NavLink text="Contact" to="/contact" />
       </ul>
     </div>
   </div>
 </nav>
 )
 
-export default Header
+export default Header;

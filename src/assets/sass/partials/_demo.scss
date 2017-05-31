@@ -26,3 +26,11 @@
         text-align: center;
     }
 }
+
+html.touchevents {
+    .demo-container {
+        .demo-rollover {
+            transform: translateY(0%)
+        }
+    }
+}

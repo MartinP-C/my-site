@@ -1,16 +1,16 @@
 import $ from './lib/jquery-3.2.1';
 
-$(document).ready(()=>{
+$(document).ready(() => {
     let $accordians = $('.js-accordian');
     
-    $accordians.each((ind, elem) => {
-        const $elem = $(elem);
+    $accordians.each((index, element) => {
+        const $element = $(element);
         
-        $elem.addClass('is-collapsed');
+        $element.addClass('is-collapsed');
 
-        $elem.on('click', function () {
+        $element.on('click touchend', function () {
             const $target = $(this);
             $target.toggleClass('is-collapsed');
-        })
+        });
     });
-})
+});

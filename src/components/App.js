@@ -10,8 +10,9 @@ import Footer from './Footer';
 import homePage from '../pages/homePage';
 import skillsPage from '../pages/skillsPage';
 import demosPage from '../pages/demosPage';
-import articlesPage from '../pages/articlesPage';
 import gasketPage from '../pages/gasketPage';
+import articlesPage from '../pages/articlesPage';
+import contactPage from '../pages/contactPage';
 
 import accordian from '../assets/scripts/accordian';
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/skills" component={skillsPage} />
           <Route path="/demos" component={demosPage} />
           <Route path="/articles" component={articlesPage} />
+          <Route path="/contact" component={contactPage} />
           <Route component={PageNotFound} />
         </Switch>
 
