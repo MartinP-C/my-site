@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import PageHeading from '../components/PageHeading';
+
+
 const skillsPage = () => (
-    <main className="skills">
+    <div className="skills">
         <section className="row justify-content-center">
             <div className="col-md-6">
-                <h1 className="sticky">Skills</h1>
+                <PageHeading>Skills</PageHeading>
                 <ul className="styled-list">
                     <li>
                         <h3>HTML</h3>
@@ -80,7 +83,7 @@ const skillsPage = () => (
                 </p>
             </div>
         </section>
-    </main>
+    </div>
 )
 
 export default skillsPage;

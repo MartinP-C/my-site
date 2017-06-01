@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import PageHeading from '../components/PageHeading';
 import Article from '../components/Article';
 import {articles} from '../cms/content.json';
 
@@ -26,7 +27,7 @@ for (article of articles) {
 
 const articlesPage = () => (
     <main className="articles">
-        <h1>Articles</h1>
+        <PageHeading>Articles</PageHeading>
         <section className="row">
                 {articlesBuilt}
         </section>

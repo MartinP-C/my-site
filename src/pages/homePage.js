@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import PageHeading from '../components/PageHeading';
+
 const indexPage = (props) => (
-    <main className="home">
-        <h1>Martin Powlesland-Cook</h1>
-        <section className="row">
+    <div className="home">
+        <PageHeading>
+            Martin Powlesland-Cook
+        </PageHeading>
+        <article className="row">
             <div className="col-sm-6">
                 <p>Front-end developer progressing to full-stack.</p>
                 <p>Excited by web development and always striving to improve.</p>
@@ -12,14 +16,14 @@ const indexPage = (props) => (
                 <p>Works very well with any department or person to exceed client expectations.</p>
             </div>
             <div className="col-sm-6"><img className="me" src="/static/images/me.jpg" /></div>
-        </section>
-        <section className="row">
+        </article>
+        <article className="row">
             <div className="col-md-12">
                 <p>This whole site is a demo but also inclues a portfolio of skills.</p>
                 <p>Made with React and built to static pages. See the <a href="https://github.com/MartinP-C/mySite">repo</a>.</p>
             </div>
-        </section>
-    </main>
+        </article>
+    </div>
 )
 
 export default indexPage;

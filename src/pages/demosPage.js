@@ -9,6 +9,9 @@ import gasketPage from './gasketPage';
 import Demo from '../components/Demo';
 import { demos } from '../cms/content.json';
 
+import PageHeading from '../components/PageHeading';
+
+
 let demo;
 const demosBuilt = [];
 
@@ -36,7 +39,7 @@ const demosPage = () => (
             exact path="/demos"
             render={() => (
                 <main className="demos">
-                    <h1>Demos</h1>
+                    <PageHeading>Demos</PageHeading>
                     <section className="row">
                             {demosBuilt}
                     </section>

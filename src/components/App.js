@@ -18,17 +18,19 @@ import accordian from '../assets/scripts/accordian';
 
 export default function App() {
     return (
-      <div style={s.root}>
+      <div id="AppRoot">
         <Header />
 
-        <Switch className="switch">
-          <Route exact path="/" component={homePage} />
-          <Route path="/skills" component={skillsPage} />
-          <Route path="/demos" component={demosPage} />
-          <Route path="/articles" component={articlesPage} />
-          <Route path="/contact" component={contactPage} />
-          <Route component={PageNotFound} />
-        </Switch>
+        <main className="container-fluid">
+          <Switch className="switch">
+            <Route exact path="/" component={homePage} />
+            <Route path="/skills" component={skillsPage} />
+            <Route path="/demos" component={demosPage} />
+            <Route path="/articles" component={articlesPage} />
+            <Route path="/contact" component={contactPage} />
+            <Route component={PageNotFound} />
+          </Switch>
+        </main>
 
         <Footer />
       </div>
