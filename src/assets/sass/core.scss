@@ -14,13 +14,16 @@
     box-sizing: border-box;
 }
 
-/*these must be deduped and merged to sass. had to update css directly when grunt would not work*/
 body{
     background-color: #E1F3F6;
 }
 
 * {
     box-sizing: border-box
+}
+
+main {
+    z-index: 0;
 }
 
 img {

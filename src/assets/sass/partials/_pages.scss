@@ -4,11 +4,23 @@
 
 .home {
     background-color: #ffffff;
-    article div {
+    article {
+        position: relative;
         background-color: #ffffff;
-        padding: 2em 1em;
+        div {
+            padding: 2em 1em;
+        }
+        .left-column {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .right-column {
+            float: right;
+        }
     }
     img.me {
-        border-radius: 190px;
+        border-radius: 50%;
+        width: 80%
     }
 }
