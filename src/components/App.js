@@ -16,6 +16,14 @@ import contactPage from '../pages/contactPage';
 
 import accordian from '../assets/scripts/accordian';
 
+/*TODO.
+Use sass variables.
+Check responsiveness.
+Gasket page.
+Single Article page.
+*/
+
+
 export default function App() {
     return (
       <div id="AppRoot">

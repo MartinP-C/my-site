@@ -1,7 +1,3 @@
-/*test*/
-h1 {
-    color:blue !important; //test
-}
 @import 'partials/vars';
 @import 'partials/typography';
 @import 'partials/lists';
@@ -25,4 +21,8 @@ body{
 
 * {
     box-sizing: border-box
+}
+
+img {
+    max-width: 100%;
 }

@@ -2,6 +2,30 @@
     background-color: #ffffff;
     padding: 2em 0.5em;
     margin-bottom: 1em;
+
+    .accordian-click-to-expand {
+        display: none;
+    }
+    
+    &.is-collapsed {
+        section {
+            height: 0;
+            overflow: hidden;
+        }
+        .accordian-click-to-expand {
+            display: block;
+        }
+    }
+
+    &.click-here-to-read {
+        section {
+            height: 3em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
     .article-footer {
         span {
             font-size: 0.8em;
