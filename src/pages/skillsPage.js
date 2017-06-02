@@ -64,7 +64,14 @@ const skillsPage = () => (
                                         <li>Visual Studio 2013/2015</li>
                                         <li>Sublime</li>
                                     </ul>
-                                    </li>
+                                </li>
+                                <li>
+                                    <h5>CI</h5>
+                                    <ul>
+                                        <li>Bamboo</li>
+                                        <li>Octopus</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </ul>
                     </li>

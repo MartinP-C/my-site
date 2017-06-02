@@ -39,7 +39,7 @@
         "name": "second",
         "title": "The Second Article",
         "subtitle": "The Second Article Subtitle",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iure facere inventore id porro, nostrum, aut quod architecto tenetur repudiandae nam est, vitae cum quis. Possimus labore, perferendis at ea.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates harum ullam minima? Nesciunt natus inventore, sequi enim facilis. Vero, laborum hic provident. Voluptate quam porro quos libero, veritatis labore voluptatibus.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quasi ea explicabo modi consequuntur qui quos odit eos sunt, voluptatem expedita ad vitae minus eius quod. Quasi praesentium quibusdam harum!",
+        "body": "This kind of article hides the overflowing text and uses the ellipsis.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iure facere inventore id porro, nostrum, aut quod architecto tenetur repudiandae nam est, vitae cum quis. Possimus labore, perferendis at ea.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates harum ullam minima? Nesciunt natus inventore, sequi enim facilis. Vero, laborum hic provident. Voluptate quam porro quos libero, veritatis labore voluptatibus.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quasi ea explicabo modi consequuntur qui quos odit eos sunt, voluptatem expedita ad vitae minus eius quod. Quasi praesentium quibusdam harum!",
         "author": "Martin",
         "date": "2017-05-12",
         "type": "click-here-to-read"

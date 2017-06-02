@@ -17,10 +17,14 @@ import contactPage from '../pages/contactPage';
 import accordian from '../assets/scripts/accordian';
 
 /*TODO.
-Use sass variables.
-Check responsiveness.
-Gasket page.
-Single Article page.
+  Page not found module..
+  Use sass variables.
+  Check responsiveness.
+  Gasket page.
+  Single Article page.
+  Accessibility.
+  Content from html into content.json
+  Some kind of CMS?
 */
 
 
