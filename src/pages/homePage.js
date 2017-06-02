@@ -22,7 +22,8 @@ const indexPage = (props) => (
         <article className="row">
             <div className="col-md-12">
                 <p>This whole site is a demo but also includes a portfolio of skills.</p>
-                <p>Made with React. See the <a href="https://github.com/MartinP-C/my-site">repo</a>.</p>
+                <p>Take a look around here and see the source on the <a href="https://github.com/MartinP-C/my-site">repo</a>. This is only the start so there will be a lot more to come!</p>
+                <p>Made with React and Webpack. See the <a href="https://github.com/MartinP-C/my-site">repo</a>.</p>
                 <p>It's maybe slightly over-the-top fitting a React SPA on github pages but it was a fun challenge.<br/>
                 <a href="https://github.com/rafrex/spa-github-pages">SPA Github Pages</a> package solved all the problems with routing. It's worth a <a href="https://github.com/rafrex/spa-github-pages">look</a>.
                 </p>
