@@ -1,6 +1,6 @@
 .js-accordian {
     &.is-collapsed {
-        ul {
+        ul, section {
             overflow: hidden;
             height: 0;
         }  

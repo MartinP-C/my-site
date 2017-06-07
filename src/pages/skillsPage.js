@@ -78,9 +78,9 @@ const skillsPage = () => (
                 </ul>
             </div>
             <div className="col-md-6">
-                <h1 className="sticky">
+                <PageHeading>
                     Experience
-                </h1>
+                </PageHeading>
                 <p>
                     Front-end on large brand, cross-country websites.<br/>
                     Working with project managers and design to exceed client expectations.
