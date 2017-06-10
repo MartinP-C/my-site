@@ -52,7 +52,7 @@ module.exports = {
       {
         test: /\.jpg/,
         exclude: /(node_modules|bower_components)/,
-        loader: "url-loader?limit=10000&mimetype=image/jpg&publicPage=./"
+        loader: "url-loader?limit=10000&mimetype=image/jpg&publicPath=./"
       },
       {
         test: /\.png/,
