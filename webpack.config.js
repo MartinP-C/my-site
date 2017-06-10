@@ -42,22 +42,22 @@ module.exports = {
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "url-loader?limit=10000&mimetype=image/svg+xml&publicPath=./build"
+        loader: "url-loader?limit=10000&mimetype=image/svg+xml&publicPath=./build/"
       },
       {
         test: /\.gif/,
         exclude: /(node_modules|bower_components)/,
-        loader: "url-loader?limit=10000&mimetype=image/gif&publicPath=./build"
+        loader: "url-loader?limit=10000&mimetype=image/gif&publicPath=./build/"
       },
       {
         test: /\.jpg/,
         exclude: /(node_modules|bower_components)/,
-        loader: "url-loader?limit=10000&mimetype=image/jpg&publicPath=./build"
+        loader: "url-loader?limit=10000&mimetype=image/jpg&publicPath=./build/"
       },
       {
         test: /\.png/,
         exclude: /(node_modules|bower_components)/,
-        loader: "url-loader?limit=10000&mimetype=image/png&publicPath=./build"
+        loader: "url-loader?limit=10000&mimetype=image/png&publicPath=./build/"
       },
       {
         test: /\.scss$/,
