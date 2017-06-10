@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import PageHeading from '../components/PageHeading';
-import CollaspingList from '../components/CollapsingList';
+import CollapsingList from '../components/CollapsingList';
 
 class skillsPage extends React.Component {
     constructor() {
@@ -16,72 +16,20 @@ class skillsPage extends React.Component {
                     <div className="col-md-6">
                         <PageHeading>Skills</PageHeading>
                         <ul className="styled-list">
-                            <li>
-                                <h3>HTML</h3>
-                            </li>
-                            <CollaspingList title="Test" subList={["test1", "test2"]} />
-                            <li className="js-accordian">
-                                <h3>CSS</h3>
-                                <ul>
-                                    <li>SASS</li>
-                                    <li>LESS</li>
-                                </ul>
-                            </li>
-                            <li className="js-accordian">
-                                <h3>Javascript</h3>
-                                <ul>
-                                    <li>ES6</li>
-                                    <li>React</li>
-                                    <li>Node.js</li>
-                                </ul>
-                            </li>
-                            <li className="js-accordian">
-                                <h3>C#</h3>
-                                <ul>
-                                    <li>ASP.NET Core</li>
-                                </ul>
-                            </li>
-                            <li className="js-accordian">
-                                <h3>Umbraco</h3>
-                            </li>
-                            <li className="js-accordian">
-                                <h3>Others</h3>
-                                <ul>
-                                    <li><h4>Programming</h4></li>
-                                    <ul>
-                                        <li>Ruby</li>
-                                        <li>Python</li>
-                                    </ul>
-                                </ul>
-                                <ul>
-                                    <li><h4>Tools</h4></li>
-                                    <ul>
-                                        <li>
-                                            <h5>SCM</h5>
-                                            <ul>
-                                                <li>git</li>
-                                                <li>SVN</li>
-                                                <li>SourceTree</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <h5>IDEs</h5>
-                                            <ul>
-                                                <li>Visual Studio Code</li>
-                                                <li>Visual Studio 2013/2015</li>
-                                                <li>Sublime</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <h5>CI</h5>
-                                            <ul>
-                                                <li>Bamboo</li>
-                                                <li>Octopus</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </ul>
-                            </li>
+                            <CollapsingList heading="HTML" />
+                            <CollapsingList heading="Test" subList={['test1', 'test2']} />
+                            <CollapsingList heading="CSS" subList={['SASS','LESS']} />
+                            <CollapsingList heading="Javascript" subList={['ES6','React','Node']} />
+                            <CollapsingList heading="C#" subList={['ASP.Net Core']} />
+                            <CollapsingList heading="CMS" subList={['Umbraco']} />
+                            <CollapsingList heading="Others">
+                                <CollapsingList heading="Programming" subList={['Ruby', 'Python']} />
+                                <CollapsingList heading="Tools">
+                                    <CollapsingList heading="SCM" subList={['git', 'SVN', 'SourceTree']} />
+                                    <CollapsingList heading="IDEs/Editors" subList={['Visual Studio Code', 'Visual Studio 2015/2017','Sublime']} />
+                                    <CollapsingList heading="CI" subList={['Bamboo', 'Octopus']} />
+                                </CollapsingList>
+                            </CollapsingList>
                         </ul>
                     </div>
                     <div className="col-md-6">

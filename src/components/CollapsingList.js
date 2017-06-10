@@ -6,18 +6,41 @@ const subList = [];
 class collapsingList extends React.Component {
     constructor() {
         super();
+        this.state = {
+            collapsed: true,
+
+        }
+    }
+
+    handleClick() {
+        const newState = {};
+
+        newState.collapsed = this.state.collapsed ? false : true;
+
+        this.setState(newState);
+    }
+
+    renderSubList(props) {
+        const returningSubList = [];
+
+        if (props.subList !== undefined) {
+            props.subList.map((item, index) => {
+                returningSubList.push(<li key={index}>{item}</li>);
+            });
+
+            return returningSubList;
+        } else {
+            return props.children;
+        }
+
     }
 
     render() {
         return (
-            <li className="js-accord" onClick={this.>
-                <h3>{this.props.title}</h3>
+            <li className={`js-accordian ${this.state.collapsed ? 'is-collapsed' : ''}`}>
+                <h3 onClick={this.handleClick.bind(this)}>{this.props.heading}</h3>
                 <ul>
-                    {
-                        this.props.subList.map((item, index) => {
-                            return <li key={index}>{item}</li>
-                        })
-                    }
+                    { this.renderSubList(this.props) }
                 </ul>
             </li>
         )
