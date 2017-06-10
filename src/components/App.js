@@ -14,8 +14,6 @@ import gasketPage from '../pages/gasketPage';
 import articlesPage from '../pages/articlesPage';
 import contactPage from '../pages/contactPage';
 
-import accordian from '../assets/scripts/accordian';
-
 /*TODO.
   Page not found module..
   Use sass variables.
