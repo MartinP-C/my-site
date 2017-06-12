@@ -8,19 +8,33 @@
         position: relative;
         background-color: #ffffff;
         div {
-            padding: 2em 1em;
+            padding: 1em;
         }
         .left-column {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+            position: relative;
+            .text {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
         .right-column {
-            float: right;
+            text-align: center;
         }
     }
     img.me {
         border-radius: 50%;
         width: 50%
+    }
+}
+
+@media (min-width: 768px) {
+    .home {
+        article {
+            div {
+                padding-top: 2em;
+                padding-bottom: 2em;
+            }
+        }
     }
 }
