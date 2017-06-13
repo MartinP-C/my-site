@@ -15,13 +15,13 @@ import articlesPage from '../pages/articlesPage';
 import contactPage from '../pages/contactPage';
 
 /*TODO.
+  style of hover lists when on touch
   Page not found module..
   Use sass variables.
   Check responsiveness.
   Gasket page.
   Single Article page.
   Accessibility.
-  Content from html into content.json
   Some kind of CMS?
 */
 
