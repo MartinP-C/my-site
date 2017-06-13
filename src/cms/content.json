@@ -31,10 +31,10 @@
         "name": "first",
         "title": "Expandable Preview Article",
         "subtitle": "The First Article Subtitle",
-        "body": "Each article is built from a React component where the content is supplied via props from a JSON file.<br>The article objects are sorted into date order before being displayed.<br>Look this is reusing the \"accordian\" from Skills!",
+        "body": "Each article is built from a React component where the content is supplied via props from a JSON file.<br>The article objects are sorted into date order before being displayed.<br><strong>Look this is reusing the \"CollapsingComponent\" from Skills!</strong>",
         "author": "Martin",
         "date": "2017-05-15",
-        "type": "accordian"
+        "type": "collapse"
     },{
         "name": "second",
         "title": "The \"Link\" Article",

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import AccordianArticle from './DefaultArticle';
+import CollapsingArticle from './CollapsingArticle';
 import DefaultArticle from './DefaultArticle';
 
 function returnArticle(props) {
-    if (props.articleType === 'accordian') {
-        return <AccordianArticle
+    if (props.articleType === 'collapse') {
+        return <CollapsingArticle
                     articleTitle={props.articleTitle}
                     articleSubtitle={props.articleSubtitle}
                     articleBody={props.articleBody}
