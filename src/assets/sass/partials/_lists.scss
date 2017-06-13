@@ -25,11 +25,17 @@ ul {
                     &::before {
                         content: '/';
                     }
+                    &.is-collapsed::before {
+                        content: '+';
+                    }
 
                     ul {
                         > li {
                             &::before {
                                 content: '#';
+                            }
+                            &.is-collapsed::before {
+                                content: '+';
                             }
                         }
                     }
