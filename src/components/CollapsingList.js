@@ -1,23 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import CollapsingComponent from './baseComponents/CollapsingComponent'
+
 const subList = [];
 
-class collapsingList extends React.Component {
+class CollapsingList extends CollapsingComponent {
     constructor() {
         super();
-        this.state = {
-            collapsed: true,
-
-        }
-    }
-
-    handleClick() {
-        const newState = {};
-
-        newState.collapsed = this.state.collapsed ? false : true;
-
-        this.setState(newState);
     }
 
     renderSubList(props) {
@@ -37,7 +27,7 @@ class collapsingList extends React.Component {
 
     render() {
         return (
-            <li className={`js-accordian ${this.state.collapsed ? 'is-collapsed' : ''}`}>
+            <li className={this.state.collapsedClassName}>
                 <h3 onClick={this.handleClick.bind(this)}>{this.props.heading}</h3>
                 <ul>
                     { this.renderSubList(this.props) }
@@ -47,4 +37,4 @@ class collapsingList extends React.Component {
     }
 }
 
-export default collapsingList;
+export default CollapsingList;
