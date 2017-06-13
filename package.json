@@ -1,18 +1,16 @@
 {
   "name": "my-site",
-  "version": "5.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "description": "Martin's Site",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --port 8888 --open",
+    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --port 8888",
     "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/spa-github-pages.git"
+    "url": "git+https://github.com/MartinP-C/my-site.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
-  "license": "MIT",
   "dependencies": {
     "node-sass": "^4.3.0",
     "prop-types": "^15.5.8",
