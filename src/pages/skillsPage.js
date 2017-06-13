@@ -17,7 +17,6 @@ class skillsPage extends React.Component {
                         <PageHeading>Skills</PageHeading>
                         <ul className="styled-list">
                             <CollapsingList heading="HTML" />
-                            <CollapsingList heading="Test" subList={['test1', 'test2']} />
                             <CollapsingList heading="CSS" subList={['SASS','LESS']} />
                             <CollapsingList heading="Javascript" subList={['ES6','React','Node']} />
                             <CollapsingList heading="C#" subList={['ASP.Net Core']} />
