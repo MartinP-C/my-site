@@ -6,6 +6,14 @@ ul {
             display: inline-block;
         }
         li {
+            &.is-collapsed {
+                &:hover {
+                    cursor: pointer;
+                    h3 {
+                        text-decoration: underline;
+                    }
+                }
+            }
             &::before {
                 height: 1em;
                 margin-right: 1em;

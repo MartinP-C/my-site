@@ -26,6 +26,13 @@
         }
     }
 
+    .click-to-expand {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
     .article-footer {
         span {
             font-size: 0.8em;
