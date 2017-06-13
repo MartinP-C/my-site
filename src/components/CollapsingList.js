@@ -29,7 +29,7 @@ class CollapsingList extends CollapsingComponent {
         return (
             <li className={this.state.collapsedClassName}>
                 <h3 onClick={this.handleClick.bind(this)}>{this.props.heading}</h3>
-                <ul>
+                <ul className={this.targetClassName}>
                     { this.renderSubList(this.props) }
                 </ul>
             </li>

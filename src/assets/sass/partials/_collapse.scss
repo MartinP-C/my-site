@@ -1,6 +1,6 @@
 .js-collapse {
     &.is-collapsed {
-        ul, section {
+        .js-collapse-target {
             overflow: hidden;
             height: 0;
         }  

@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 
 const jsClassName = 'js-collapse';
 const stateClassName = 'is-collapsed';
+const targetClassName = 'js-collapse-target';
 
 class CollapsingComponent extends React.Component {
     constructor() {
@@ -11,6 +12,7 @@ class CollapsingComponent extends React.Component {
             collapsed: true,
             collapsedClassName: `${jsClassName} ${stateClassName}`
         }
+        this.targetClassName = targetClassName;
     }
 
     handleClick(e) {
