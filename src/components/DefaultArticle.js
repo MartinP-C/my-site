@@ -3,8 +3,6 @@ import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 
 const Article = (props) => (
-
-
     <div className="col-md-12">
     <article className={`article-container ${props.articleType}`}>
         <h2>{props.articleTitle}</h2>
@@ -12,7 +10,7 @@ const Article = (props) => (
         <section dangerouslySetInnerHTML={
             {__html: props.articleBody}
         }></section>
-        <Link to={`/articles/${props.articleName}`}>
+        <Link to={`/article/${props.articleName}`}>
             Click here to read
         </Link>
         <footer className="article-footer">

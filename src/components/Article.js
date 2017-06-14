@@ -19,6 +19,8 @@ function returnArticle(props) {
                     articleBody={props.articleBody}
                     articleAuthor={props.articleAuthor}
                     articleDate={props.articleDate}
+                    articleName={props.articleName}
+                    articleType={props.articleType}
                 />
     }
 }

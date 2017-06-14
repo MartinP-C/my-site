@@ -13,6 +13,7 @@ import demosPage from '../pages/demosPage';
 import gasketPage from '../pages/gasketPage';
 import articlesPage from '../pages/articlesPage';
 import contactPage from '../pages/contactPage';
+import articlePage from '../pages/articlePage';
 
 /*TODO.
   style of hover lists when on touch
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/skills" component={skillsPage} />
             <Route path="/demos" component={demosPage} />
             <Route path="/articles" component={articlesPage} />
+            <Route path="/article/:name" component={articlePage} />
             <Route path="/contact" component={contactPage} />
             <Route component={PageNotFound} />
           </Switch>
