@@ -3,7 +3,7 @@ import Interactive from 'react-interactive';
 import { Switch, Route } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
 
-import s from '../assets/sass/core.scss';
+import s from '../assets/sass/main.scss';
 
 import Header from './Header';
 import Footer from './Footer';
