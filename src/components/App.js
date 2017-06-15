@@ -10,12 +10,17 @@ import Footer from './Footer';
 import homePage from '../pages/homePage';
 import skillsPage from '../pages/skillsPage';
 import demosPage from '../pages/demosPage';
-import gasketPage from '../pages/gasketPage';
+import GasketPage from '../pages/GasketPage';
 import articlesPage from '../pages/articlesPage';
 import contactPage from '../pages/contactPage';
 import articlePage from '../pages/articlePage';
 
 /*TODO.
+  Page container class?
+  sort path names between local dev and github. /my-site/build vs /build
+  dynamic demo pages
+  BBC GEL grid?
+  BEM/OOCSS/ITCSS?
   style of hover lists when on touch
   Page not found module..
   Use sass variables.
@@ -36,6 +41,7 @@ export default function App() {
           <Switch className="switch">
             <Route exact path="/" component={homePage} />
             <Route path="/skills" component={skillsPage} />
+            <Route path="/demos/gasket" component={GasketPage} />
             <Route path="/demos" component={demosPage} />
             <Route path="/articles" component={articlesPage} />
             <Route path="/article/:name" component={articlePage} />

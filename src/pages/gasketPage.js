@@ -2,17 +2,27 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import PageHeading from '../components/PageHeading';
+import gasketMaker from '../assets/scripts/gasketMaker';
 
-const gasketPage = () => (
-    <main className="gasket">
-        {/*<Head>*/}
-            <script src="/static/scripts/gasketMaker.js"></script>
-        {/*</Head>*/}
-        <PageHeading>Gasket</PageHeading>
-        <section>
-            <canvas id="myCanvas"></canvas>
-        </section>
-    </main>
-);
+class GasketPage extends React.Component {
+    constructor() {
+        super();
+    }
 
-export default gasketPage;
+    componentDidMount() {
+        gasketMaker();
+    }
+
+    render() {
+        return (
+            <main className="gasket">
+                <PageHeading>Gasket</PageHeading>
+                <section>
+                    <canvas id="myCanvas"></canvas>
+                </section>
+            </main>
+        )
+    }
+}
+
+export default GasketPage;
