@@ -4,8 +4,6 @@ import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
 import PageNotFound from '../components/PageNotFound';
 
-import gasketPage from './gasketPage';
-
 import Demo from '../components/Demo';
 import { demos } from '../cms/content.json';
 
