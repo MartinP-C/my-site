@@ -28,26 +28,12 @@ for (demo of demos) {
 }
 
 const demosPage = () => (
-        <Switch>
-            <Route
-                exact path="/demos/gasket"
-                render={({location}) => (
-                    <gasketPage location={location} />
-                )}
-            />
-            <Route
-            exact path="/demos"
-            render={() => (
-                <main className="demos">
-                    <PageHeading>Demos</PageHeading>
-                    <section className="row">
-                            {demosBuilt}
-                    </section>
-                </main>
-            )}
-            />
-      <Route component={PageNotFound} />
-      </Switch>
+    <main className="demos">
+        <PageHeading>Demos</PageHeading>
+        <section className="row">
+                {demosBuilt}
+        </section>
+    </main>
 );
 
 export default demosPage;
