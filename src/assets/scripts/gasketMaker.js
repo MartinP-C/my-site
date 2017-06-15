@@ -55,14 +55,14 @@
         this.k = (1 / r);
         this.kcom = [(1 / r), 0]; //k as complex number for calcs
         this.z = [x, y]; //centre as co-ord
-        this.zk = ComplexMaths.ComplexMul(this.z, this.kcom); //z*k
+        this.zk = ComplexMaths.Mul(this.z, this.kcom); //z*k
     }
 
     //flip the curve, make k opposite sign and recalc zk
     function MakeOutside(a) {
         a.k = (-1) * (1 / a.r);
         a.kcom = [a.k, 0];
-        a.zk = ComplexMaths.ComplexMul(a.z, a.kcom);
+        a.zk = ComplexMaths.Mul(a.z, a.kcom);
     }
 
 
@@ -89,21 +89,21 @@
         var onetwo = ComplexMaths.Mul(a.zk, b.zk);
         var twothree = ComplexMaths.Mul(b.zk, c.zk);
         var onethree = ComplexMaths.Mul(a.zk, c.zk);
-        var beginning = ComplexMaths.ComplexAdd(ComplexMaths.ComplexAdd(a.zk, b.zk), c.zk);
-        var middle = ComplexMaths.ComplexAdd(ComplexMaths.ComplexAdd(onetwo, twothree), onethree);
+        var beginning = ComplexMaths.Add(ComplexMaths.Add(a.zk, b.zk), c.zk);
+        var middle = ComplexMaths.Add(ComplexMaths.Add(onetwo, twothree), onethree);
 
-        return ComplexMaths.ComplexDiv((ComplexMaths.ComplexAdd(beginning, (ComplexMaths.ComplexMul([2, 0], ComplexMaths.ComplexSqrt(middle))))), d.kcom);
+        return ComplexMaths.Div((ComplexMaths.Add(beginning, (ComplexMaths.Mul([2, 0], ComplexMaths.Sqrt(middle))))), d.kcom);
     }
 
-    //this is same as zofnew1 except use ComplexSqrt2
+    //this is same as zofnew1 except use Sqrt2
     function zofnew2(a, b, c, d) {
-        var onetwo = ComplexMaths.ComplexMul(a.zk, b.zk);
-        var twothree = ComplexMaths.ComplexMul(b.zk, c.zk);
-        var onethree = ComplexMaths.ComplexMul(a.zk, c.zk);
-        var beginning = ComplexMaths.ComplexAdd(ComplexMaths.ComplexAdd(a.zk, b.zk), c.zk);
-        var middle = ComplexMaths.ComplexAdd(ComplexMaths.ComplexAdd(onetwo, twothree), onethree);
+        var onetwo = ComplexMaths.Mul(a.zk, b.zk);
+        var twothree = ComplexMaths.Mul(b.zk, c.zk);
+        var onethree = ComplexMaths.Mul(a.zk, c.zk);
+        var beginning = ComplexMaths.Add(ComplexMaths.Add(a.zk, b.zk), c.zk);
+        var middle = ComplexMaths.Add(ComplexMaths.Add(onetwo, twothree), onethree);
         
-        return ComplexMaths.ComplexDiv((ComplexMaths.ComplexAdd(beginning, (ComplexMaths.ComplexMul([2, 0], ComplexMaths.ComplexSqrt2(middle))))), d.kcom);
+        return ComplexMaths.Div((ComplexMaths.Add(beginning, (ComplexMaths.Mul([2, 0], ComplexMaths.Sqrt2(middle))))), d.kcom);
     }
 
     //using zofnew1
@@ -114,7 +114,7 @@
         a.z = zofnew1(a.st, a.nd, a.rd, a);
         a.x = a.z[0];
         a.y = a.z[1];
-        a.zk = ComplexMaths.ComplexMul(a.z, a.kcom);
+        a.zk = ComplexMaths.Mul(a.z, a.kcom);
     }
 
     //using zofnew2
@@ -125,7 +125,7 @@
         a.z = zofnew2(a.st, a.nd, a.rd, a);
         a.x = a.z[0];
         a.y = a.z[1];
-        a.zk = ComplexMaths.ComplexMul(a.z, a.kcom);
+        a.zk = ComplexMaths.Mul(a.z, a.kcom);
     }
 
     /*TODO: get it to iterate through the circles and draw them.
@@ -174,28 +174,8 @@
     k: (1 / 1),
     kcom: [(1 / 1), 0],
     z: [1, 1]
-        //maybestillneedthis zk = ComplexMul([z,kcom);
+        //maybestillneedthis zk = Mul([z,kcom);
     })*/
-
-    (function loopTest() {
-        var table, i;
-        table = document.getElementById('table');
-
-
-        //loop
-        for (i = 0; i < 11; i++){
-            (function addNumber() {
-                var line = document.createElement('p');
-                var text = document.createTextNode(i);
-                line.appendChild(text);
-                table.appendChild(line);
-            })();
-        }
-
-        
-
-
-    })();
 
     document.getElementById('length').innerHTML = circles.length;
     console.log('Ran');

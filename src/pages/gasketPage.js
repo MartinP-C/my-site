@@ -18,6 +18,7 @@ class GasketPage extends React.Component {
             <main className="gasket">
                 <PageHeading>Gasket</PageHeading>
                 <section>
+                    <div id="length"></div>
                     <canvas id="myCanvas"></canvas>
                 </section>
             </main>
