@@ -3,7 +3,7 @@ import Interactive from 'react-interactive';
 import { Switch, Route } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
 
-import s from '../assets/sass/main.scss';
+import '../assets/sass/main.scss';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -16,6 +16,9 @@ import contactPage from '../pages/contactPage';
 import articlePage from '../pages/articlePage';
 
 /*TODO.
+  confirm babel settings - e.g. classes in gasket
+  sort out content.json array remove
+  change to 4 spaces!
   Page container class?
   sort path names between local dev and github. /my-site/build vs /build
   dynamic demo pages
